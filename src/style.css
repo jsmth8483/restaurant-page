@@ -1,12 +1,123 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 }
 
-.banner-img {
-	background: no-repeat center url('./brewery_banner2.jpg');
+#content {
+	height: 100vh;
+}
+
+.header-container {
+	background: no-repeat center url('./brewery_banner3.jpg');
 	background-size: cover;
-	background-position-y: 60%;
-	width: 100%;
-	height: 30vh;
+	background-color: rgba(0,0,0,.3);
+	background-blend-mode: multiply;
+	height: 60vh;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: end;
+	padding: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	gap: 15px;
+}
+nav ul li {
+	color: white;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	color: #FFD60A;
+}
+
+.banner-text {
+	font-family: 'Stick No Bills', sans-serif;
+	margin: 100px auto;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner-heading {
+	text-align: center;
+	color: #FFC300;
+	font-size: 64px;
+	margin: 40px 0;
+}
+
+.banner-tagline {
+	font-size: 36px;
+	color: white;
+	text-align: center;
+}
+
+.banner-text button {
+	background-color: transparent;
+	border: 1px solid #FFD60A;
+	color: #FFD60A;
+	padding: 5px;
+	margin-top: 20px;
+	width: 100px;
+}
+
+main {
+	background-color: white;
+}
+
+main h3 {
+	text-align: center;
+	margin: 30px;
+	font-size: 24px;
+	font-family: 'Stick No Bills', sans-serif;
+
+}
+
+.taplist-container {
+	margin: 0 auto;
+	width: 60%;
+	border: 1px solid #f4f1de;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.tap-card {
+	margin: 10px;
+	display: flex;
+}
+
+.tap-card-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.tap-card-details h4 {
+	font-weight: normal;
+}
+
+.tap-card img{
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+
+.tap-card span {
+	margin: 0 5px;
 }

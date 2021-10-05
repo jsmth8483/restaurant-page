@@ -4,22 +4,69 @@
 <head>
     <title>Restaurant</title>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
     <link href="../src/style.css" rel="stylesheet">
     <script src="./main.js" defer></script>
 </head>
 
 <body>
     <div id="content">
-        <div class="container">
-            <div class="banner-img"></div>
-            <div class="highlight"></div>
-            <main>
-                <div class="content-left"></div>
-                <div class="center-img"></div>
-                <div class="content-right"></div>
-                <div class="content-bottom"></div>
-            </main>
+        <div class="header-container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tap List</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Schedule A Tour</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="banner">
+                <div class="banner-text">
+                    <h1 class="banner-heading">Battleground Brewing</h1>
+                    <h2 class="banner-tagline">Beer worth fighting for.</h2>
+                    <button>View Tap List</button>
+                </div>
+            </div>
         </div>
+        <main>
+            <h3>Tap List</h3>
+            <div class="taplist-container">
+                <div class="tap-card">
+                    <img src="../src/beer.png">
+                    <div class="tap-card-details">
+                        <h4>Manny's Pale Ale</h4>
+                        <div>
+                            <span>5% ABV</span><span>Georgetown Brewing</span><span>Seattle, WA</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="tap-card">
+                    <img src="../src/beer.png">
+                    <div class="tap-card-details">
+                        <h4>Manny's Pale Ale</h4>
+                        <div>
+                            <span>5% ABV</span><span>Georgetown Brewing</span><span>Seattle, WA</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="tap-card">
+                    <img src="../src/beer.png">
+                    <div class="tap-card-details">
+                        <h4>Manny's Pale Ale</h4>
+                        <div>
+                            <span>5% ABV</span><span>Georgetown Brewing</span><span>Seattle, WA</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 

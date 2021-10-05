@@ -1,2 +1,3 @@
-console.log('hello webpack');
-console.log('Im being watched');
+import { loadHomePage } from './pages/home.js';
+
+loadHomePage();
