@@ -1,7 +1,9 @@
-*, *::before, *::after {
-    box-sizing: inherit;
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
 }
 
 body {
@@ -13,10 +15,10 @@ body {
 	height: 100vh;
 }
 
-.header-container {
+.banner-container {
 	background: no-repeat center url('./brewery_banner3.jpg');
 	background-size: cover;
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0, 0, 0, 0.3);
 	background-blend-mode: multiply;
 	height: 60vh;
 	margin: 0 auto;
@@ -43,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #FFD60A;
+	color: #ffd60a;
 }
 
 .banner-text {
@@ -57,7 +59,7 @@ nav a:hover {
 
 .banner-heading {
 	text-align: center;
-	color: #FFC300;
+	color: #ffc300;
 	font-size: 64px;
 	margin: 40px 0;
 }
@@ -70,8 +72,8 @@ nav a:hover {
 
 .banner-text button {
 	background-color: transparent;
-	border: 1px solid #FFD60A;
-	color: #FFD60A;
+	border: 1px solid #ffd60a;
+	color: #ffd60a;
 	padding: 5px;
 	margin-top: 20px;
 	width: 100px;
@@ -86,7 +88,6 @@ main h3 {
 	margin: 30px;
 	font-size: 24px;
 	font-family: 'Stick No Bills', sans-serif;
-
 }
 
 .taplist-container {
@@ -112,7 +113,7 @@ main h3 {
 	font-weight: normal;
 }
 
-.tap-card img{
+.tap-card img {
 	width: 40px;
 	height: 40px;
 	margin-right: 5px;

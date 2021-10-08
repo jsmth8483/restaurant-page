@@ -1,7 +1,12 @@
-import tapList from '../layouts/tapList.js';
+import { tapList } from '../layouts';
+import { homeBannerContainer } from '../layouts';
 
 function loadHomePage() {
-    tapList();
+    const content = document.querySelector('#content')
+    content.appendChild(homeBannerContainer.loadHomeBannerContainer());
+    const main = document.createElement('main');
+    main.appendChild(tapList.createTapList())
+    content.appendChild(main);
 }
 
 export {
