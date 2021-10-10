@@ -28,6 +28,8 @@ class Nav {
         nav.appendChild(ul);
         return nav;
     }
+
+    
 }
 
 export let nav = new Nav();

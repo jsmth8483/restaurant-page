@@ -1,9 +1,9 @@
 import { nav } from '../components';
-class HomeBannerContainer {
+class HomeBanner {
 
-    loadHomeBannerContainer() {
+    loadHomeBanner() {
         const bannerContainer = document.createElement('div');
-        bannerContainer.classList.add('banner-container');
+        bannerContainer.classList.add('home-banner-container');
         const header = document.createElement('header');
         header.appendChild(nav.loadNav());
         bannerContainer.appendChild(header);
@@ -32,24 +32,4 @@ class HomeBannerContainer {
     }
 }
 
-export let homeBannerContainer = new HomeBannerContainer();
-
-{/* <div class="banner-container">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tap List</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Schedule A Tour</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner">
-        <div class="banner-text">
-            <h1 class="banner-heading">Battleground Brewing</h1>
-            <h2 class="banner-tagline">Beer worth fighting for.</h2>
-            <button>View Tap List</button>
-        </div>
-    </div>
-</div> */}
+export let homeBanner = new HomeBanner();

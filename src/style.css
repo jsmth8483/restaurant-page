@@ -15,12 +15,21 @@ body {
 	height: 100vh;
 }
 
-.banner-container {
+.home-banner-container {
 	background: no-repeat center url('./brewery_banner3.jpg');
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.3);
 	background-blend-mode: multiply;
 	height: 60vh;
+	margin: 0 auto;
+}
+
+.tap-list-banner-container {
+	background: no-repeat center url('./brewery_banner3.jpg');
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-blend-mode: multiply;
+	/* height: 60vh; */
 	margin: 0 auto;
 }
 
