@@ -27,8 +27,8 @@ const taps = [
 class TapList {
     createTapList() {
         const tapList = document.createElement('div');
-        const tapListHeading = document.createElement('h3');
-        tapListHeading.textContent = 'Tap List';
+        // const tapListHeading = document.createElement('h3');
+        // tapListHeading.textContent = 'Tap List';
         
         const tapListContainer = document.createElement('div');
         tapListContainer.classList.add('taplist-container');
@@ -37,7 +37,7 @@ class TapList {
             tapListContainer.appendChild(tapCard.createTapCard());
         })   
 
-        tapList.appendChild(tapListHeading);
+        //tapList.appendChild(tapListHeading);
         tapList.appendChild(tapListContainer);
         return tapList;
     }

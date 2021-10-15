@@ -1,6 +1,6 @@
 import { nav } from '../components';
-class HomeBanner {
 
+class HomeBanner {
     loadHomeBanner() {
         const bannerContainer = document.createElement('div');
         bannerContainer.classList.add('home-banner-container');
