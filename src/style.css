@@ -13,30 +13,34 @@ body {
 
 #content {
 	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.home-banner-container {
+header {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	padding: 20px;
+}
+
+.banner-container {
 	background: no-repeat center url('./brewery_banner3.jpg');
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.3);
 	background-blend-mode: multiply;
 	height: 550px;
 	margin: 0 auto;
-}
-
-.tap-list-banner-container {
-	background: no-repeat center url('./brewery_banner3.jpg');
-	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.3);
-	background-blend-mode: multiply;
-	height: 550px;
-	margin: 0 auto;
+	position: relative;
 }
 
 nav {
 	display: flex;
-	justify-content: end;
-	padding: 20px;
+	justify-content: center;
+	/* padding: 20px; */
+	width: 300px;
 }
 
 nav ul {
@@ -59,11 +63,15 @@ nav a:hover {
 
 .banner-text {
 	font-family: 'Stick No Bills', sans-serif;
-	margin: 100px auto;
+	margin: 0 auto;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .banner-heading {
@@ -101,10 +109,14 @@ main h3 {
 .taplist-container {
 	margin: 20px auto;
 	width: 60%;
-	border: 1px solid #f4f1de;
-	background-color: white;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+}
+
+.bordered {
+	border: 1px solid #f4f1de;
+	background-color: white;
 }
 
 .tap-card {
@@ -129,4 +141,40 @@ main h3 {
 
 .tap-card span {
 	margin: 0 5px;
+}
+
+.about-container {
+	width: 60%;
+	margin: 20px auto;
+	padding: 10px 20px;
+}
+
+.form-container {
+	width: 250px;
+	margin: 20px auto;
+	padding: 0 20px 20px 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+form label {
+	width: 200px;
+	padding: 8px 0;
+}
+
+form input {
+	width: 200px;
+}
+
+form input[type='submit'] {
+	background-color: #ffd60a;
+	border: none;
+	padding: 5px;
+	font-family: 'Stick No Bills', sans-serif;
+	width: 100px;
 }

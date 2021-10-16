@@ -1,29 +1,11 @@
-import { nav } from '../components';
-import { tapList } from '../layouts';
-import { homeBanner } from '../layouts';
-import { loadTapListPage } from '../pages';
-
+import { homeBanner, about } from '../layouts';
 
 function loadHomePage() {
-    const content = document.querySelector('#content')
-    content.appendChild(homeBanner.loadHomeBanner());
-    const main = document.createElement('main');
-    main.appendChild(tapList.createTapList())
-    content.appendChild(main);
-    nav.tapListLink.addEventListener('click', () => {
-        clearContent();
-        loadTapListPage();
-    })
+	const container = document.querySelector('#container');
+	container.appendChild(homeBanner.loadHomeBanner());
+	const main = document.createElement('main');
+	main.appendChild(about.loadAbout());
+	container.appendChild(main);
 }
 
-function clearContent() {
-    const contentToClear = document.querySelector('#content');
-    document.body.removeChild(contentToClear);
-    const contentToCreate = document.createElement('div');
-    contentToCreate.id = 'content';
-    document.body.appendChild(contentToCreate)
-}
-
-export {
-    loadHomePage
-} 
+export { loadHomePage };
