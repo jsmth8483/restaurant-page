@@ -35,4 +35,4 @@ function clearContent() {
 	contentDiv.appendChild(contentToCreate);
 }
 
-loadScheduleTourPage();
+loadHomePage();
